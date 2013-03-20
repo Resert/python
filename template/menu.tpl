@@ -1,0 +1,1 @@
+<div class="menu">	<a href="/">Домой</a> | <a href="/edit">Обновить показания</a> | <a href="/report">Отчет</a> | <a href="/logout">Выход</a></div>

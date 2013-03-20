@@ -1,0 +1,495 @@
+.textbox{
+margin-top: 15%;
+}
+table.table1{
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tfoot td{
+    color: #9CD009;
+    font-size:32px;
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.table1 tfoot th{
+    color:#666;
+}
+.table1 tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+.table1 tbody span.check::before{
+    content : url(../images/check0.png)
+}
+
+/* Form Container */
+body{
+	background:url('/static/bg.png') top left repeat-x rgb(192,222,237);
+}
+.text{
+	padding:0;
+	text-align: center; 
+	text-shadow: 1px 1px 2px black, 0 0 0.1em black; /* Параметры тени */
+    color: white; /* Белый цвет текста */
+    font-size: 1.5em; /* Размер надписи */
+}
+a {
+	text-shadow: 1px 1px 2px black, 0 0 0.1em blue; /* Параметры тени */
+    color: white; /* Белый цвет текста */
+    font-size: 0.9em; /* Размер надписи */
+}
+
+.menu{
+	padding:0;
+	text-align: right; 
+	text-shadow: 1px 1px 2px black, 0 0 0.1em black; /* Параметры тени */
+    color: white; /* Белый цвет текста */
+    font-size: 1.5em; /* Размер надписи */
+}
+.login-form,
+.login-form h1,
+.login-form span,
+.login-form input,
+.login-form label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+/* Form Container */
+.login-form {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	padding: 15px 25px 0 25px;
+	margin-top: 170px;
+	cursor: default;
+
+	background-color: #141517;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+.login-form:before {
+	position: absolute;
+	top: -12px;
+	left: 10px;
+
+	width: 0px;
+	height: 0px;
+	content: '';
+	
+	border-bottom: 10px solid #141517;
+	border-right: 10px solid #141517;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+/* Form Title */
+.login-form	h1 {
+	line-height: 40px;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #e4e4e4;
+}
+
+/* Form Input General Styles */
+.login-form input[type=text],
+.login-form input[type=password],
+.login-form input[type=submit] {
+	line-height: 14px;
+	margin: 10px 0;
+	padding: 6px 15px;
+	border: 0;
+	outline: none;
+
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	border-radius: 26px;
+
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+/* Form User&Pass Input Styles */
+.login-form input[type=text],
+.login-form input[type=password],
+.js .login-form span {
+	color: #686868;
+	width: 170px;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+
+	background: #989898;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #989898 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#989898));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: linear-gradient(top,  #ffffff 0%,#989898 100%);
+}
+
+.login-form input[type=text]:hover,
+.login-form input[type=password]:hover {
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+}
+
+.login-form input[type=text]:focus,
+.login-form input[type=password]:focus {
+	background: #e1e1e1;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e1e1e1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e1e1e1));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+}
+
+/* Form Submit Input Styles */
+.login-form input[type=submit],
+.js .login-form span.checked:before {
+	float: right;
+	cursor: pointer;
+
+	color: #445b0f;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+.login-form input[type=submit]:hover {
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+	-moz-box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+	box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+
+.login-form input[type=submit]:active {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Form Green Gradient Styles */
+.login-form input[type=submit],
+.js .login-form span.checked:before {
+	background: #a5cd4e;
+	background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+	background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+}
+
+/* Form Checkbox Input Styles */
+.js .login-form input[type=checkbox] {
+	position: fixed;
+	left: -9999px;
+}
+
+.login-form span {
+	position: relative;
+	margin-top: 15px;
+	float: left;
+}
+
+.js .login-form span {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.js .login-form span.checked:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+/* Form Label Styles */
+
+.login-form label {
+	position: absolute;
+	top: 1px;
+	left: 25px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #e4e4e4;
+}
+
+.signup-form,
+.signup-form h1,
+.signup-form span,
+.signup-form input,
+.signup-form label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+/* Form Container */
+.signup-form {
+	position: relative;
+	width: 200px;
+	height: 280px;
+	padding: 15px 25px 0 25px;
+	margin-top: 15px;
+	cursor: default;
+
+	background-color: #141517;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255, .2), inset 0px 1px 1px 0px rgb(0,0,0);
+}
+
+.signup-form:before {
+	position: absolute;
+	top: -12px;
+	left: 10px;
+
+	width: 0px;
+	height: 0px;
+	content: '';
+	
+	border-bottom: 10px solid #141517;
+	border-right: 10px solid #141517;
+	border-top: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+/* Form Title */
+.signup-form	h1 {
+	line-height: 40px;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #e4e4e4;
+}
+
+/* Form Input General Styles */
+.signup-form input[type=text],
+.signup-form input[type=password],
+.signup-form input[type=submit] {
+	line-height: 14px;
+	margin: 10px 0;
+	padding: 6px 15px;
+	border: 0;
+	outline: none;
+
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	border-radius: 26px;
+
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+/* Form User&Pass Input Styles */
+.signup-form input[type=text],
+.signup-form input[type=password],
+.js .signup-form span {
+	color: #686868;
+	width: 170px;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6);
+
+	background: #989898;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #989898 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#989898));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#989898 100%);
+	background: linear-gradient(top,  #ffffff 0%,#989898 100%);
+}
+
+.signup-form input[type=text]:hover,
+.signup-form input[type=password]:hover {
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .6), 0px 0px 5px rgba(255,255,255, .5);
+}
+
+.signup-form input[type=text]:focus,
+.signup-form input[type=password]:focus {
+	background: #e1e1e1;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e1e1e1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e1e1e1));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e1e1e1 100%);
+}
+
+/* Form Submit Input Styles */
+.signup-form input[type=submit],
+.js .signup-form span.checked:before {
+	float: right;
+	cursor: pointer;
+
+	color: #445b0f;
+
+	-webkit-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+	-moz-box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+	box-shadow: inset 1px 1px 1px 0px rgba(255,255,255, .45), 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+.signup-form input[type=submit]:hover {
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+	-moz-box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+	box-shadow: inset 1px 1px 3px 0px rgba(255,255,255, .8), 0px 1px 1px 0px rgba(0,0,0, .6);
+}
+
+.signup-form input[type=submit]:active {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Form Green Gradient Styles */
+.signup-form input[type=submit],
+.js .signup-form span.checked:before {
+	background: #a5cd4e;
+	background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+	background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+}
+
+/* Form Checkbox Input Styles */
+.js .signup-form input[type=checkbox] {
+	position: fixed;
+	left: -9999px;
+}
+
+.signup-form span {
+	position: relative;
+	margin-top: 15px;
+	float: left;
+}
+
+.js .signup-form span {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.js .signup-form span.checked:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255, .45), inset 0px 1px 1px 0px rgba(0,0,0, .3);
+}
+
+/* Form Label Styles */
+
+.signup-form label {
+	position: absolute;
+	top: 1px;
+	left: 25px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #e4e4e4;
+}
